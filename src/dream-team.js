@@ -15,7 +15,24 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function createDreamTeam(/* members */) {
   throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+
+  /*if (Array.isArray(members)) { // проверить массив или нет
+   return false;
+  }
+  members.sort();
+
+  let DreamTeam = [];
+
+  for (let i = 0; i < DreamTeam.length; i++) {  // переюрать массив
+   if (typeof members[i] === 'string') {    // проверить строки
+    let first = members[i].charAt(0).toUpperCase();   // получить букву первую
+    DreamTeam.push(first);    // добавить ее в массив
+   }
+  }
+  // DreamTeam.sort();   //  сортировать в алфавитном
+   let DreamTeamStr = DreamTeam.join('');   //   добавить буквы
+return DreamTeamStr;
+  // remove line with error and write your code here*/
 }
 
 module.exports = {
